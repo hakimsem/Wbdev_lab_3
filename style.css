@@ -1,0 +1,251 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f3f4f6;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.biodata-table {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.biodata-table h2 {
+    color: #1e3a8a;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.biodata-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.biodata-table table, .biodata-table td, .biodata-table th {
+    border: 1px solid #ddd;
+}
+
+.biodata-table td, .biodata-table th {
+    padding: 12px;
+    text-align: left;
+}
+
+.biodata-table td:first-child {
+    font-weight: bold;
+    color: #555;
+    width: 25%;
+    background-color: #f9fafb;
+}
+
+.biodata-table td:nth-child(2) {
+    color: #333;
+}
+
+.biodata-table .profile-pic {
+    text-align: center;
+    padding: 20px;
+}
+
+.biodata-table .profile-pic img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+a {
+    color: #1e3a8a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .biodata-table {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+
+    .biodata-table table {
+        font-size: 0.9em;
+    }
+
+    .profile-pic img {
+        width: 100px;
+    }
+}
+
+/* Hobby Section Styling */
+.hobby-section {
+    margin-bottom: 20px;
+}
+
+.hobby-section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.hobby-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobby-card {
+    background: white;
+    width: 25%; /* Set to 25% for a smaller card size */
+    max-width: 200px; /* Limit max width to keep it compact */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+}
+
+.hobby-card img {
+    width: 100%;          /* Full width of the card */
+    height: 150px;        /* Set height for compact view */
+    object-fit: cover;    /* Ensures the image fills the area without distortion */
+}
+
+.hobby-card p {
+    padding: 10px;
+    color: #333;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hobby-card {
+        width: 45%; /* Make slightly bigger on small screens */
+    }
+}
+@media (max-width: 480px) {
+    .hobby-card {
+        width: 90%; /* Full width on very small screens */
+    }
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Campus Life Content Styling */
+.campus-life-content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    padding: 15px 0;
+    color: #333;
+}
+
+.description h2 {
+    color: #1e3a8a;
+    text-align: left;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.description li {
+    padding: 5px 0;
+    font-weight: 600;
+}
